@@ -1,2 +1,0 @@
-[console_scripts]
-carbide = carbide.cli:main
