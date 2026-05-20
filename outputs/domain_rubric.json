@@ -1,62 +1,57 @@
 {
   "repo": "carbide",
-  "company": "Carson",
+  "company": "Carbide",
   "rubric_axes": [
     {
-      "axis": "carson_coverage",
+      "axis": "evidence_coverage",
       "failures": [
-        "carson_drift"
+        "evidence_drift"
       ],
       "evidence_required": true
     },
     {
-      "axis": "whole_risk",
+      "axis": "handoff_risk",
       "failures": [
-        "whole_gap"
+        "handoff_gap"
       ],
       "evidence_required": true
     },
     {
-      "axis": "pitch_precision",
+      "axis": "claim_precision",
       "failures": [
-        "pitch_misroute"
+        "claim_misroute"
       ],
       "evidence_required": true
     },
     {
-      "axis": "generative_latency",
+      "axis": "review_latency",
       "failures": [
-        "generative_blindspot"
+        "review_blindspot"
       ],
       "evidence_required": true
     }
   ],
   "archetypes": [
     {
-      "name": "carson evidence replay",
-      "trigger": "carson signal changes while whole context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "whole boundary probe",
-      "trigger": "whole handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "pitch regression harness",
-      "trigger": "pitch behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "generative operator packet",
-      "trigger": "generative output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources_used": [
-    "https://usecarson.com",
-    "https://github.com/sidkmenon",
-    "https://www.linkedin.com/in/sidkmenon/",
-    "https://www.cedarpolicy.com/"
-  ]
+  "sources_used": []
 }

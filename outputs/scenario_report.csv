@@ -1,5 +1,5 @@
 scenario,cases,blocks,reviews,mean_severity,mean_score,top_evidence_id,recommended_action
-carson evidence replay,36,4,5,2.611,0.4155,ev_0088,block release until cited evidence is regenerated
-generative operator packet,36,4,5,2.556,0.3851,ev_0055,accept only if decision claims cite fixture evidence
-pitch regression harness,36,3,5,2.528,0.4049,ev_0066,open a regression issue with trace and benchmark delta
-whole boundary probe,36,3,4,2.528,0.3954,ev_0077,route to reviewer with evidence packet
+claim regression harness,36,3,5,2.528,0.3978,ev_0066,open a regression issue with trace and benchmark delta
+evidence replay,36,4,5,2.611,0.4235,ev_0132,block release until cited evidence is regenerated
+handoff boundary probe,36,3,4,2.528,0.3974,ev_0121,route to reviewer with evidence packet
+review operator packet,36,4,5,2.556,0.4116,ev_0143,accept only if decision claims cite fixture evidence

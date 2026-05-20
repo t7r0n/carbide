@@ -6,7 +6,7 @@ A typed, auditable generative UI runtime for agentic apps — every rendered com
 
 ## Why it exists
 
-Carson's whole pitch is "the UI is generative." But every artifact on usecarson.com — the prospect pane, the deck editor, the workflow builder — looks like a pre designed React surface that the LLM populates, not a layout the model invents per task. That's the gap between the marketing and the reality.
+Carbide's whole pitch is "the UI is generative." But every artifact on useCarbide.com — the prospect pane, the deck editor, the workflow builder — looks like a pre designed React surface that the LLM populates, not a layout the model invents per task. That's the gap between the marketing and the reality.
 
 The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
@@ -22,14 +22,14 @@ The project is intentionally built as a local replay harness instead of a slide.
 
 ## Signals it measures
 
-- `carson coverage`
+- `Carbide coverage`
 - `whole risk`
 - `pitch precision`
 - `generative latency`
 
 ## Failure modes it plants
 
-- carson drift
+- Carbide drift
 - whole gap
 - pitch misroute
 - generative blindspot
@@ -52,13 +52,6 @@ uv run ruff check .
 - `outputs/decision_report.md`
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
-
-## Sources
-
-- https://usecarson.com
-- https://github.com/sidkmenon
-- https://www.linkedin.com/in/sidkmenon/
-- https://www.cedarpolicy.com/
 
 ## Boundary
 

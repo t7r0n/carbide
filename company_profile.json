@@ -1,72 +1,61 @@
 {
-  "company": "Carson",
-  "company_slug": "carson",
+  "company": "Carbide",
+  "company_slug": "carbide",
   "repo": "carbide",
   "package": "carbide",
   "cli": "carbide",
   "title": "Carbide",
-  "problem": "Carson's whole pitch is \"the UI is generative.\" But every artifact on usecarson.com \u2014 the prospect pane, the deck editor, the workflow builder \u2014 looks like a pre designed React surface that the LLM populates, not a layout the model invents per task. That's the gap between the marketing and the reality.",
-  "direction": "A typed, auditable generative UI runtime for agentic apps \u2014 every rendered component carries a capability scope, every re render is a stable diff, and every action is logged with a cryptographic intent trail.",
-  "why": "The judgement of which problem. Carson's competitive advantage is \"we can sell agentic UIs to regulated enterprises because we're ex Palantir.\" That advantage evaporates the first time a customer asks \"prove the model can't escalate.\" carbide is the proof.",
+  "problem": "Carbide's whole pitch is \"the UI is generative.\" But every artifact on - the prospect pane, the deck editor, the workflow builder - looks like a pre designed React surface that the LLM populates, not a layout the model invents per task. That's the gap between the marketing and the reality.",
+  "direction": "A typed, auditable generative UI runtime for agentic apps - every rendered component carries a capability scope, every re render is a stable diff, and every action is logged with a cryptographic intent trail.",
+  "why": "This repository is intentionally project-branded rather than company-branded. It focuses on deterministic replay, source-grounded analysis, and reviewer-visible evidence paths.",
   "terms": [
-    "carson",
-    "whole",
-    "pitch",
-    "generative",
-    "artifact",
-    "usecarson",
-    "prospect",
-    "editor",
-    "builder",
-    "looks",
-    "designed",
-    "react",
-    "surface",
-    "populates",
-    "layout",
-    "model",
-    "invents",
-    "marketing"
+    "evidence",
+    "workflow",
+    "review",
+    "claims",
+    "fixtures",
+    "replay",
+    "handoff",
+    "trace",
+    "policy",
+    "decision",
+    "coverage",
+    "latency"
   ],
   "metrics": [
-    "carson_coverage",
-    "whole_risk",
-    "pitch_precision",
-    "generative_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "carson_drift",
-    "whole_gap",
-    "pitch_misroute",
-    "generative_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "archetypes": [
     {
-      "name": "carson evidence replay",
-      "trigger": "carson signal changes while whole context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "whole boundary probe",
-      "trigger": "whole handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "pitch regression harness",
-      "trigger": "pitch behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "generative operator packet",
-      "trigger": "generative output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources": [
-    "https://usecarson.com",
-    "https://github.com/sidkmenon",
-    "https://www.linkedin.com/in/sidkmenon/",
-    "https://www.cedarpolicy.com/"
-  ],
+  "sources": [],
   "github_url": "https://github.com/t7r0n/carbide"
 }

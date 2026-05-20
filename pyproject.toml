@@ -1,7 +1,7 @@
 [project]
 name = "carbide"
 version = "0.1.0"
-description = "A typed, auditable generative UI runtime for agentic apps - every rendered component carries a capability scope, every re render is a stable"
+description = "A typed, auditable generative UI runtime for agentic apps - every rendered component carries a capability scope, every r"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
