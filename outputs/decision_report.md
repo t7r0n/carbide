@@ -1,6 +1,6 @@
 # Decision Report: Carbide
 
-A typed, auditable generative UI runtime for agentic apps - every rendered component carries a capability scope, every re render is a stable diff, and every action is logged with a cryptographic intent trail.
+A typed, auditable generative UI runtime for agentic apps — every rendered component carries a capability scope, every re render is a stable diff, and every action is logged with a cryptographic intent trail.
 
 ## Evidence-Grounded Findings
 

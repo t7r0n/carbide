@@ -1,22 +1,22 @@
 # Carbide
 
-A typed, auditable generative UI runtime for agentic apps - every rendered component carries a capability scope, every re render is a stable diff, and every action is logged with a cryptographic intent trail.
+A typed, auditable generative UI runtime for agentic apps — every rendered component carries a capability scope, every re render is a stable diff, and every action is logged with a cryptographic intent trail.
 
 ![Carbide working dashboard](outputs/project_working.svg)
 
 ## Why it exists
 
-Carson's whole pitch is "the UI is generative." But every artifact on usecarson.com - the prospect pane, the deck editor, the workflow builder - looks like a pre designed React surface that the LLM populates, not a layout the model invents per task.
+Carson's whole pitch is "the UI is generative." But every artifact on usecarson.com — the prospect pane, the deck editor, the workflow builder — looks like a pre designed React surface that the LLM populates, not a layout the model invents per task. That's the gap between the marketing and the reality.
 
-Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
+The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
 ## What is inside
 
-- A deterministic replay harness tuned around carson, whole, and pitch.
-- Company-specific strategy code in `src/carbide/strategy.py`, not just README-level customization.
-- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
-- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
-- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+- Deterministic fixture generation for the company-specific risk surface.
+- Strategy code in `src/carbide/strategy.py` with project-specific scoring and visual evidence.
+- Citation-locked reports where every decision claim points to a generated evidence ID.
+- Two regenerated visual artifacts: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, benchmark, and test artifacts.
 
 ![Carbide evidence map](outputs/evidence_map.svg)
 
