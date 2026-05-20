@@ -1,6 +1,6 @@
 # Operator Brief: Carson
 
-Carson gets a local, deterministic pressure test around carson, whole, and pitch. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action.
+Carson gets a local, deterministic pressure test around carson, whole, and pitch. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
