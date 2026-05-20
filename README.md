@@ -2,19 +2,39 @@
 
 A typed, auditable generative UI runtime for agentic apps - every rendered component carries a capability scope, every re render is a stable diff, and every action is logged with a cryptographic intent trail.
 
-## Why This Exists
+![Carbide working dashboard](outputs/project_working.svg)
 
-Carson's whole pitch is "the UI is generative." But every artifact on usecarson.com - the prospect pane, the deck editor, the workflow builder - looks like a pre designed React surface that the LLM populates, not a layout the model invents per task. That's the gap between the marketing and the reality.
+## Why it exists
 
-## What It Builds
+Carson's whole pitch is "the UI is generative." But every artifact on usecarson.com - the prospect pane, the deck editor, the workflow builder - looks like a pre designed React surface that the LLM populates, not a layout the model invents per task.
 
-- Replays synthetic `carson` and `whole` cases against the project's evidence rules.
-- Scores `carson_coverage`, `whole_risk`, and `pitch_precision` so regressions are visible in CSV and JSON.
-- Plants `carson drift` and `whole gap` failures as negative controls.
-- Writes citation-locked decision claims; unsupported claims fail verification.
-- Exports a review dashboard and demo pack for `carbide` without hosted services.
+Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
 
-## Local Run
+## What is inside
+
+- A deterministic replay harness tuned around carson, whole, and pitch.
+- Company-specific strategy code in `src/carbide/strategy.py`, not just README-level customization.
+- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
+- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+
+![Carbide evidence map](outputs/evidence_map.svg)
+
+## Signals it measures
+
+- `carson coverage`
+- `whole risk`
+- `pitch precision`
+- `generative latency`
+
+## Failure modes it plants
+
+- carson drift
+- whole gap
+- pitch misroute
+- generative blindspot
+
+## Run it locally
 
 ```bash
 uv sync
@@ -23,16 +43,14 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Outputs worth opening
 
-- `outputs/analysis.json`
-- `outputs/scenario_report.csv`
-- `outputs/decision_report.md`
-- `outputs/evidence_packet.md`
-- `outputs/domain_rubric.json`
-- `outputs/failure_matrix.md`
-- `outputs/trace_graph.mmd`
 - `outputs/dashboard.html`
+- `outputs/project_working.svg`
+- `outputs/evidence_map.svg`
+- `outputs/operator_brief.md`
+- `outputs/decision_report.md`
+- `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
 ## Sources
@@ -44,4 +62,4 @@ uv run ruff check .
 
 ## Boundary
 
-This repository uses synthetic fixtures only. It has no credentials, no customer data, no outreach data, and no dependency on a hosted API.
+Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.
