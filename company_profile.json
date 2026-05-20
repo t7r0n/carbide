@@ -13,7 +13,6 @@
     "whole",
     "pitch",
     "generative",
-    "every",
     "artifact",
     "usecarson",
     "prospect",
@@ -26,7 +25,8 @@
     "populates",
     "layout",
     "model",
-    "invents"
+    "invents",
+    "marketing"
   ],
   "metrics": [
     "carson_coverage",
@@ -39,6 +39,28 @@
     "whole_gap",
     "pitch_misroute",
     "generative_blindspot"
+  ],
+  "archetypes": [
+    {
+      "name": "carson evidence replay",
+      "trigger": "carson signal changes while whole context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "whole boundary probe",
+      "trigger": "whole handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "pitch regression harness",
+      "trigger": "pitch behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "generative operator packet",
+      "trigger": "generative output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
   ],
   "sources": [
     "https://usecarson.com",

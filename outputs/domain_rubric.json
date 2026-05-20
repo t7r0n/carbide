@@ -1,19 +1,37 @@
 {
-  "company": "Carson",
   "repo": "carbide",
-  "metrics": [
-    "carson_coverage",
-    "whole_risk",
-    "pitch_precision",
-    "generative_latency"
+  "company": "Carson",
+  "rubric_axes": [
+    {
+      "axis": "carson_coverage",
+      "failures": [
+        "carson_drift"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "whole_risk",
+      "failures": [
+        "whole_gap"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "pitch_precision",
+      "failures": [
+        "pitch_misroute"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "generative_latency",
+      "failures": [
+        "generative_blindspot"
+      ],
+      "evidence_required": true
+    }
   ],
-  "failure_modes": [
-    "carson_drift",
-    "whole_gap",
-    "pitch_misroute",
-    "generative_blindspot"
-  ],
-  "domain_archetypes": [
+  "archetypes": [
     {
       "name": "carson evidence replay",
       "trigger": "carson signal changes while whole context is stale",
@@ -35,6 +53,10 @@
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "minimum_cases": 144,
-  "requires_evidence_markers": true
+  "sources_used": [
+    "https://usecarson.com",
+    "https://github.com/sidkmenon",
+    "https://www.linkedin.com/in/sidkmenon/",
+    "https://www.cedarpolicy.com/"
+  ]
 }
